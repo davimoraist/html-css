@@ -51,20 +51,37 @@ section{
     font-size: 5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.nomal{
     background-color: white;
     color: black;
 }
 
+section#ima01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#ima02{
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+
 section.imagem{
     background-color: rgba(100, 239, 239, 0.57);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 section.imagem > P{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(84, 84, 84, 0.321);
+    background-color: rgba(84, 84, 84, 0.616);
 }
 
 a:hover{
