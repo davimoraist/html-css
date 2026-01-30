@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #area , #disciplina , #nota , #media{ 
+            text-align: center;
+        }
+        #areas{
+            align-items: center;
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2" id="area">ÁREA</td>
+            <td rowspan="2" id="disciplinas">disciplinas</td>
+            <td colspan="2" id="nota">Nota</td>
+            <td colspan="2"rowspan="2" id="media">média</td>
+        </tr>
+        <tr>
+            <td class="nota">NOTA 1</td>
+            <td class="nota">NOTA 2</td>
+          
+        </tr>
+        <tr>
+            <td rowspan="4">exatas</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="5">Media de exatas</td>
+          
+            <td>0</td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="exatas">humanas</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="5" id="humanas">média de humanas</td>
+             
+            <td>0</td>
+        </tr>
+    </table>
+</body>
+</html>
