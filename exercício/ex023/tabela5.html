@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+    }
+    th, td{
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .nome{
+        background-color: aquamarine;
+    }
+
+</style>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome" span="2">
+            
+            <col class="sexo">
+            <col class="profissão">
+        </colgroup>
+        <caption>cadastroa</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">sexo</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <th>Ana Paula</th>
+            <th>28 anos</th>
+            <th>F</th>
+            <th>Professora de Matemática</th>
+        </tr>
+        <tr>
+            <th>Carlos Eduardo</th>
+            <th>35 anos</th>
+            <th>M</th>
+            <th>Desenvolvedor Web</th>
+        </tr>
+        <tr>
+            <th>Mariana Silva</th> 
+            <th>22 anos</th>
+            <th>F</th>
+            <th>Estudante de Design Gráfico</th>
+        </tr>
+        <tr>
+            <th>João Pedro</th>
+            <th>40 anos</th>
+            <th>M</th>
+            <th>Motorista de Aplicativo</th>
+        </tr>
+        <tr>
+            <th>Fernanda Rocha</th>
+            <th>31 anos</th>
+            <th>F</th>
+            <th>Enfermeira</th>
+        </tr>
+    </table>
+</body>
+</html>
