@@ -1,96 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Meu Portfólio</title>
- <style>
-    body {
-    font-family: Arial;
-    text-align: center;
-    background: #f4f4f4;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segunda página</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkslategrey;
 
-.slider {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slides img {
-    width: 300px;
-    margin: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.slides img:hover {
-    transform: scale(1.05);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.8);
-}
-
-.conteudo {
-    width: 80%;
-    height: 80%;
-    margin: 5% auto;
-    background: white;
-    position: relative;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.fechar {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-}
- </style>
+        }
+    </style>
 </head>
 
 <body>
-
-    <h1>Meus Projetos</h1>
-
-    <div class="slider">
-
-        <div class="slides">
-            <img src="img1.jpg" onclick="abrirProjeto('projeto1/index.html')">
-            <img src="img2.jpg" onclick="abrirProjeto('projeto2/index.html')">
-            <img src="img3.jpg" onclick="abrirProjeto('projeto3/index.html')">
-        </div>
-
-    </div>
-
-    <div class="modal" id="modal">
-        <div class="conteudo">
-            <span class="fechar" onclick="fecharProjeto()">X</span>
-            <iframe id="iframeProjeto"></iframe>
-        </div>
-    </div>
-
-     <script>
-        function abrirProjeto(url) {
-                document.getElementById("modal").style.display = "block";
-                document.getElementById("iframeProjeto").src = url;
-            }
-
-            function fecharProjeto() {
-                document.getElementById("modal").style.display = "none";
-                document.getElementById("iframeProjeto").src = "";
-            }
-     </script>
+    <h1>segunda página</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, cum tempore dolores accusamus molestiae, nulla sed
+        nemo itaque a cumque ipsum atque? Ex fuga placeat consequuntur numquam ipsam tempora. Quibusdam. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Placeat explicabo facilis fugit, eius perspiciatis porro iste quis
+        saepe cumque blanditiis maiores, pariatur quam perferendis labore amet. Numquam asperiores nihil minima. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Quod ducimus consequuntur dolores sapiente minima aspernatur
+        quam nostrum eius necessitatibus alias at ad sequi ipsum illo dolorem, magnam distinctio dolor quaerat?</p>
 </body>
 
 </html>
