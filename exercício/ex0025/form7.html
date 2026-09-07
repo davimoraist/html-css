@@ -13,9 +13,41 @@
          <p>
             <label for="iest">Estado</label> 
             <select name="Estado" id="iest">
-                 
+
+                <option value="" selected>---Escolha--</option>
+                 <optgroup label="Região Norte">
+                     <option value="AC">Acre</option>
+                     <option value="AP" >Amapá</option>
+                     <option value="AM">Amazona</option>
+                     <option value="PA">Pará</option>
+                 </optgroup>
+                 <optgroup label="Região Nordeste">
+                     <option value="BA">Bahia</option>
+                     <option value="CE">Ceará</option>
+                     <option value="PB">Paraíba</option>
+                     <option value="PI">Piaui</option>
+                 </optgroup>
+ 
             </select>
          </p>
+
+         <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="isprof">
+            <datalist id="isprof">
+                <option >Administrador</option>
+                <option >Contabilista</option>
+                <option >Desevolvedor</option>
+                <option >Professor</option>
+            </datalist>
+         </p>
+
+         <p>
+            <label for="imeg">Mensagem</label>
+            <br>
+            <textarea name="msg" id="imeg " cols="30" rows="10"></textarea>
+         </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
