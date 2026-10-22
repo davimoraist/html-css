@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+</style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="login.php" method="post" autocomplete="off">
+        <p>
+            <label for="nume1">Número 1</label>
+            <input type="number" name="nume1" id="nume1" min="0" max="50" required
+             oninput="soma.innerHTML = Number(nume1.value) + Number(nume2.value)">
+        </p>
+
+        <p>
+            <label for="nume2">Número 2</label>
+            <input type="number" name="nume2" id="nume2" min="0" max="50" required
+            oninput="soma.innerHTML = Number(nume1.value) + Number(nume2.value)">
+        </p>
+
+        <p>
+            <label for="soma">soma</label>
+            <output name="soma" id="soma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
